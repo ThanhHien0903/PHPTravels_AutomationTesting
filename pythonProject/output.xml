@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-17T12:24:47.369668" rpa="false" schemaversion="5">
+<suite id="s1" name="TS01 SignUp" source="c:\development\RobotFramework\project_phptravel\pythonProject\project\testscript\TS01_SignUp.robot">
+<test id="s1-t1" name="SignUp" line="7">
+<kw name="Start Test" owner="keywords" type="SETUP">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Start Test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-17T12:24:47.812874" elapsed="0.000631"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-17T12:24:47.814237" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-17T12:24:47.813849" elapsed="9.139581"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-17T12:24:56.953887" elapsed="0.101204"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Web_Homepage_Login_Image}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-17T12:24:57.055898" elapsed="0.067480"/>
+</kw>
+<doc>[Description]
+[Author]
+[Date]</doc>
+<status status="PASS" start="2024-10-17T12:24:47.811783" elapsed="9.311823"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-17T12:24:57.124629" level="INFO">Clicking element 'xpath=//strong[@class='m-0 text-dark text-uppercase']'.</msg>
+<arg>${Web_Homepage_Account_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-17T12:24:57.124210" elapsed="0.100733"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Web_Homepage_Account_Dropdown}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-17T12:24:57.225738" elapsed="0.084275"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-17T12:25:00.312622" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-17T12:24:57.310731" elapsed="3.003419"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-17T12:25:00.319485" level="INFO">Clicking element 'xpath=//strong[text()='Signup ']'.</msg>
+<arg>${Web_Homepage_SelectType_Select}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-17T12:25:00.317924" elapsed="2.540201"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Web_SignUp_SignUp}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-17T12:25:02.858991" elapsed="0.301280"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-17T12:25:06.162907" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-17T12:25:03.161149" elapsed="3.003252"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-17T12:25:06.167600" level="INFO">Typing text 'Tran' into text field 'xpath=//input[@id='firstname']'.</msg>
+<arg>${Web_SignUp_Input_FirstName}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-17T12:25:06.166757" elapsed="0.251065"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-17T12:25:06.420014" level="INFO">Typing text 'Hien' into text field 'xpath=//input[@id='last_name']'.</msg>
+<arg>${Web_SignUp_Input_LastName}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-17T12:25:06.419290" elapsed="0.144409"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-17T12:25:06.566877" level="INFO">Typing text '0824688357' into text field 'xpath=//input[@id='phone']'.</msg>
+<arg>${Web_SignUp_Input_Phone}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-17T12:25:06.565608" elapsed="0.141879"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-17T12:25:06.710014" level="INFO">Typing text 'admin123@gmail.com' into text field 'xpath=//input[@id='user_email']'.</msg>
+<arg>${Web_SignUp_Input_Email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-17T12:25:06.709166" elapsed="0.136160"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-17T12:25:06.848659" level="INFO">Typing password into text field 'xpath=//input[@id='password']'.</msg>
+<msg time="2024-10-17T12:25:06.923579" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${Web_SignUp_Input_Password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-17T12:25:06.847024" elapsed="0.145452"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-10-17T12:25:06.994226" level="INFO">Selecting checkbox '//div[@class='rc-anchor-center-item rc-anchor-checkbox-holder']'.</msg>
+<msg time="2024-10-17T12:25:07.153187" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-17T12:25:07.155550" level="FAIL">Checkbox with locator '//div[@class='rc-anchor-center-item rc-anchor-checkbox-holder']' not found.</msg>
+<arg>//div[@class='rc-anchor-center-item rc-anchor-checkbox-holder']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-17T12:25:06.993484" elapsed="0.186308">Checkbox with locator '//div[@class='rc-anchor-center-item rc-anchor-checkbox-holder']' not found.</status>
+</kw>
+<doc>[Description]
+ [TC_ID]
+ [Author]
+ [Date]</doc>
+<status status="FAIL" start="2024-10-17T12:24:47.810693" elapsed="19.369935">Checkbox with locator '//div[@class='rc-anchor-center-item rc-anchor-checkbox-holder']' not found.</status>
+</test>
+<doc>SignUp</doc>
+<status status="FAIL" start="2024-10-17T12:24:47.378773" elapsed="19.806377"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TS01 SignUp">TS01 SignUp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

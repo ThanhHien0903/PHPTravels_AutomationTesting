@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-11-20T16:14:14.512518" rpa="false" schemaversion="5">
+<suite id="s1" name="TS09 Blog" source="c:\development\RobotFramework\project_phptravel\pythonProject\project\testscript\TS09_Blog.robot">
+<test id="s1-t1" name="Blog" line="8">
+<kw name="Start Test" owner="keywords" type="SETUP">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Start Test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-20T16:14:14.988873" elapsed="0.001091"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-20T16:14:14.991060" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-20T16:14:14.990474" elapsed="8.232460"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-20T16:14:23.223443" elapsed="0.111575"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Web_Homepage_Login_Image}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-20T16:14:23.336895" elapsed="0.251136"/>
+</kw>
+<doc>[Description]
+[Author]
+[Date]</doc>
+<status status="PASS" start="2024-11-20T16:14:14.986843" elapsed="8.602225"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='homepage']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-20T16:14:23.591120" elapsed="0.042443"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-20T16:14:23.636647" level="INFO">Clicking element 'xpath=//a[contains(text(),'Blogs')]'.</msg>
+<arg>${Web_Homepage_Blog_Select}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-20T16:14:23.635811" elapsed="3.149663"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Web_Blog_Blog_Header}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-20T16:14:26.789930" elapsed="0.109629"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Web_Blog_Blog_Title}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-20T16:14:26.901572" elapsed="0.035144"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-20T16:14:29.940473" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-20T16:14:26.938689" elapsed="3.002888"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-20T16:14:29.945830" level="INFO">Clicking element 'xpath=//a[contains(text(),'The Tiber River s Last Eel Fishermen')]'.</msg>
+<arg>${Web_Blog_Title_Select}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-20T16:14:29.944178" elapsed="1.617891"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Web_Blog_MainHeader}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-20T16:14:31.564010" elapsed="0.118759"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-20T16:14:34.688515" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-20T16:14:31.686390" elapsed="3.002882"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-11-20T16:14:34.692185" elapsed="6.361937"/>
+</kw>
+<status status="PASS" start="2024-11-20T16:14:14.985288" elapsed="26.070306"/>
+</test>
+<doc>Blog</doc>
+<status status="PASS" start="2024-11-20T16:14:14.526486" elapsed="26.532404"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS09 Blog">TS09 Blog</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
